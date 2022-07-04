@@ -14,8 +14,11 @@ pub contract BottomShot {
     }
   }
 
+  pub resource interface CollectionPublic {
+    pub fun getIDs(): [UInt64]
+  }
   // This is a resource that's going to contain all the NFTs any one account owns
-  pub resource Collection {
+  pub resource Collection: CollectionPublic {
     // This is a dictionary that maps ID integers with NFT resources
     // the @ indicates that we're working with a resource
     pub var ownedNFTs: @{UInt64: NFT}
