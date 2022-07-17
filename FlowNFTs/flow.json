@@ -6,7 +6,8 @@
 		}
 	},
 	"contracts": {
-		"BottomShot": "./contracts/BottomShot.cdc"
+		"BottomShot": "./contracts/BottomShot.cdc",
+		"Creed": "./contracts/Creed.cdc"
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
@@ -23,7 +24,7 @@
 	"deployments": {
 		"testnet": {
 			"testnet-account": [
-				"BottomShot"
+				"Creed"
 			]
 		}
 	}
